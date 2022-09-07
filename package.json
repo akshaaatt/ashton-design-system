@@ -5,9 +5,7 @@
   "author": "akshaaatt",
   "license": "GPL-3.0-or-later",
   "repository": "akshaaatt/ashton-design-system",
-  "main": "dist/index.js",
-  "module": "dist/index.modern.js",
-  "source": "src/index.ts",
+  "main": "src/index.js",
   "engines": {
     "node": ">=10"
   },
