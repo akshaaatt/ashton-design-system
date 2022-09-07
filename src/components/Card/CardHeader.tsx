@@ -10,7 +10,7 @@ interface CardHeader {
 export const CardHeader: React.FC<PropsWithChildren<CardHeader>> = (props) => {
   const { atoms: atomicProperties, children } = props
 
-  const classes = composeWithAtoms(atomicProperties, cardHeaderStyle)
+  const classes = composeWithAtoms(atomicProperties!, cardHeaderStyle)
 
   return <div className={classes}>{children}</div>
 }

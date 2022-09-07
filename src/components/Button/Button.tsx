@@ -5,7 +5,9 @@ import { buttonStyle, ButtonVariants } from './Button.css'
 
 interface Button extends ButtonHTMLAttributes<HTMLButtonElement> {
   atoms?: Atoms
+  // @ts-ignore
   color?: ButtonVariants['color']
+  // @ts-ignore
   size?: ButtonVariants['size']
 }
 
@@ -13,7 +15,7 @@ const Button: React.FC<Button> = (props) => {
   const { atoms: atomicProperties, children, color, size, ...rest } = props
 
   const classes = composeWithAtoms(
-    atomicProperties,
+    atomicProperties!,
     buttonStyle({
       color,
       size

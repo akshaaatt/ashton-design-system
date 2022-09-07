@@ -1,11 +1,13 @@
 {
   "name": "ashton-design-system",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ashton Design System",
   "author": "akshaaatt",
   "license": "GPL-3.0-or-later",
   "repository": "akshaaatt/ashton-design-system",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.modern.js",
+  "source": "src/index.ts",
   "engines": {
     "node": ">=10"
   },
@@ -17,11 +19,15 @@
   },
   "homepage": "https://github.com/akshaaatt/react-library-generator#readme",
   "keywords": [
+    "ashton",
+    "design-system",
     "react",
     "library",
     "generator",
     "component",
-    "template"
+    "typescript",
+    "tailwindcss",
+    "design"
   ],
   "scripts": {
     "build": "microbundle-crl --no-compress --format modern,cjs",
@@ -33,6 +39,7 @@
     "test:watch": "react-scripts test --env=jsdom",
     "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build",
+    "buildpackage": "cd src && yarn pack",
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
@@ -52,7 +59,8 @@
     "@vanilla-extract/recipes": "0.2.5",
     "@vanilla-extract/sprinkles": "1.4.1",
     "polished": "4.2.2",
-    "react-transition-group": "4.4.5"
+    "react-transition-group": "4.4.5",
+    "normalize.css": "8.0.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",

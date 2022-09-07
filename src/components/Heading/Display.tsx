@@ -18,7 +18,7 @@ type Display = RequireOnlyOne<
 const Display: React.FC<Display> = (props) => {
   const { atoms: atomicProperties, children, level, size, text } = props
 
-  const style = composeWithAtoms(atomicProperties, displayStyleVariants[size])
+  const style = composeWithAtoms(atomicProperties!, displayStyleVariants[size])
 
   switch (level) {
     case 1:

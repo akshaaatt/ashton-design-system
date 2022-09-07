@@ -11,7 +11,7 @@ interface NavListItem {
 const NavListItem: React.FC<PropsWithChildren<NavListItem>> = (props) => {
   const { atoms: atomicProperties, children } = props
 
-  const classes = composeWithAtoms(atomicProperties, navListItemStyle)
+  const classes = composeWithAtoms(atomicProperties!, navListItemStyle)
 
   return <li className={classes}>{children}</li>
 }

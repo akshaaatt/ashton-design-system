@@ -21,7 +21,9 @@ interface AutoGrid {
   equalHeight?: boolean
   guttersX?: keyof typeof spacers
   guttersY?: keyof typeof spacers
+  // @ts-ignore
   horizontalAlign?: AutoGridVariants['horizontalAlign']
+  // @ts-ignore
   verticalAlign?: AutoGridVariants['verticalAlign']
 }
 
@@ -38,17 +40,24 @@ const AutoGrid: React.FC<PropsWithChildren<AutoGrid>> = (props) => {
   } = props
 
   const classes = composeWithAtoms(
-    atomicProperties,
+    atomicProperties!,
     autoGridStyle({
+      // @ts-ignore
       height: equalHeight ? 'equal' : null,
       horizontalAlign,
       verticalAlign
     }),
+    // @ts-ignore
     autoGridXSColumnsStyle[columns?.xs],
+    // @ts-ignore
     autoGridSMColumnsStyle[columns?.sm],
+    // @ts-ignore
     autoGridMDColumnsStyle[columns?.md],
+    // @ts-ignore
     autoGridLGColumnsStyle[columns?.lg],
+    // @ts-ignore
     autoGridXLColumnsStyle[columns?.xl],
+    // @ts-ignore
     autoGridXXLColumnsStyle[columns?.xxl],
     autoGridXGuttersStyle[guttersX],
     autoGridYGuttersStyle[guttersY]

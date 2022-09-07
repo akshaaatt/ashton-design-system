@@ -12,7 +12,7 @@ const UnorderedList: React.FC<PropsWithChildren<UnorderedList>> = (props) => {
   const { atoms: atomicProperties, children, direction = 'horizontal' } = props
 
   const classes = composeWithAtoms(
-    atomicProperties,
+    atomicProperties!,
     unorderedListStyle[direction]
   )
 

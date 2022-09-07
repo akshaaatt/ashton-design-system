@@ -10,7 +10,7 @@ interface Container {
 const Container: React.FC<PropsWithChildren<Container>> = (props) => {
   const { atoms: atomicProperties, children } = props
 
-  const classes = composeWithAtoms(atomicProperties, containerStyle)
+  const classes = composeWithAtoms(atomicProperties!, containerStyle)
 
   return <div className={classes}>{children}</div>
 }

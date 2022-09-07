@@ -5,7 +5,9 @@ import { rowStyle, RowVariants } from './Row.css'
 
 interface Row {
   atoms?: Atoms
+  // @ts-ignore
   horizontalAlign?: RowVariants['horizontalAlign']
+  // @ts-ignore
   verticalAlign?: RowVariants['verticalAlign']
 }
 
@@ -18,7 +20,7 @@ const Row: React.FC<PropsWithChildren<Row>> = (props) => {
   } = props
 
   const classes = composeWithAtoms(
-    atomicProperties,
+    atomicProperties!,
     rowStyle({
       horizontalAlign,
       verticalAlign

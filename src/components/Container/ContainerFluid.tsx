@@ -10,7 +10,7 @@ interface ContainerFluid {
 const ContainerFluid: React.FC<PropsWithChildren<ContainerFluid>> = (props) => {
   const { atoms: atomicProperties, children } = props
 
-  const classes = composeWithAtoms(atomicProperties, containerFluidStyle)
+  const classes = composeWithAtoms(atomicProperties!, containerFluidStyle)
 
   return <div className={classes}>{children}</div>
 }

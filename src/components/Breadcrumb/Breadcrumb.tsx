@@ -10,7 +10,7 @@ interface Breadcrumb {
 const Breadcrumb: React.FC<PropsWithChildren<Breadcrumb>> = (props) => {
   const { atoms: atomicProperties, children } = props
 
-  const classes = composeWithAtoms(atomicProperties, breadcrumbStyle)
+  const classes = composeWithAtoms(atomicProperties!, breadcrumbStyle)
 
   return (
     <nav aria-label='breadcrumb'>

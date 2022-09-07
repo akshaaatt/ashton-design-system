@@ -17,7 +17,7 @@ type Heading = RequireOnlyOne<
 const Heading: React.FC<Heading> = (props) => {
   const { atoms: atomicProperties, children, level, text } = props
 
-  const style = composeWithAtoms(atomicProperties, headingStyleVariants[level])
+  const style = composeWithAtoms(atomicProperties!, headingStyleVariants[level])
 
   switch (level) {
     case 1:

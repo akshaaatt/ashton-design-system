@@ -6,14 +6,16 @@ import { tagStyle, TagVariants } from './Tag.css'
 
 interface Tag {
   atoms?: Atoms
+  // @ts-ignore
   color: TagVariants['color']
+  // @ts-ignore
   size?: TagVariants['size']
 }
 
 const Tag: React.FC<PropsWithChildren<Tag>> = (props) => {
   const { atoms: atomicProperties, children, color, size } = props
 
-  const classes = composeWithAtoms(atomicProperties, tagStyle({ color, size }))
+  const classes = composeWithAtoms(atomicProperties!, tagStyle({ color, size }))
 
   return (
     <Box className={classes} backgroundColor={color}>

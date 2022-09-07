@@ -5,6 +5,7 @@ import { alertStyle, AlertVariants } from './Alert.css'
 
 interface Alert {
   atoms?: Atoms
+  // @ts-ignore
   color: AlertVariants['color']
 }
 
@@ -12,7 +13,7 @@ const Alert: React.FC<PropsWithChildren<Alert>> = (props) => {
   const { atoms: atomicProperties, children, color } = props
 
   const style = composeWithAtoms(
-    atomicProperties,
+    atomicProperties!,
     alertStyle({
       color
     })

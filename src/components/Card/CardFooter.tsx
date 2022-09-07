@@ -10,7 +10,7 @@ interface CardFooter {
 export const CardFooter: React.FC<PropsWithChildren<CardFooter>> = (props) => {
   const { atoms: atomicProperties, children } = props
 
-  const classes = composeWithAtoms(atomicProperties, cardFooterStyle)
+  const classes = composeWithAtoms(atomicProperties!, cardFooterStyle)
 
   return <div className={classes}>{children}</div>
 }

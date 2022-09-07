@@ -7,6 +7,7 @@ import React, {
   useEffect,
   useRef
 } from 'react'
+// @ts-ignore
 import { Transition } from 'react-transition-group'
 import Button from '../Button/Button'
 import ContainerFluid from '../Container/ContainerFluid'

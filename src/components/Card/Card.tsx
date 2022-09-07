@@ -10,7 +10,7 @@ interface Card {
 const Card: React.FC<PropsWithChildren<Card>> = (props) => {
   const { atoms: atomicProperties, children } = props
 
-  const classes = composeWithAtoms(atomicProperties, cardStyle)
+  const classes = composeWithAtoms(atomicProperties!, cardStyle)
 
   return <div className={classes}>{children}</div>
 }

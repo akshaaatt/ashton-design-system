@@ -10,7 +10,7 @@ interface CardBody {
 export const CardBody: React.FC<PropsWithChildren<CardBody>> = (props) => {
   const { atoms: atomicProperties, children } = props
 
-  const classes = composeWithAtoms(atomicProperties, cardBodyStyle)
+  const classes = composeWithAtoms(atomicProperties!, cardBodyStyle)
 
   return <div className={classes}>{children}</div>
 }

@@ -10,7 +10,7 @@ interface AutoGridCell {
 const AutoGridCell: React.FC<PropsWithChildren<AutoGridCell>> = (props) => {
   const { atoms: atomicProperties, children } = props
 
-  const classes = composeWithAtoms(atomicProperties, autoGridCellStyle)
+  const classes = composeWithAtoms(atomicProperties!, autoGridCellStyle)
 
   return <div className={classes}>{children}</div>
 }

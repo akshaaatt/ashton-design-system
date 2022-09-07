@@ -11,7 +11,7 @@ interface BreadcrumbItem {
 const BreadcrumbItem: React.FC<PropsWithChildren<BreadcrumbItem>> = (props) => {
   const { atoms: atomicProperties, children, current = false } = props
 
-  const classes = composeWithAtoms(atomicProperties, breadcrumbItemStyle)
+  const classes = composeWithAtoms(atomicProperties!, breadcrumbItemStyle)
 
   return (
     <li aria-current={current ? 'page' : undefined} className={classes}>
