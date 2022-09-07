@@ -11,7 +11,7 @@ const spacers = {
   9: '64px',
   10: '80px',
   11: '96px',
-  12: '128px',
-};
+  12: '128px'
+}
 
-export default spacers;
+export default spacers

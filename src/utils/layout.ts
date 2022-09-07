@@ -1,6 +1,6 @@
 export const columns: Array<LayoutColumns> = [
-  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
-];
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+]
 
 export const columnVariants: Record<number | string, string> = {
   auto: 'auto',
@@ -15,5 +15,5 @@ export const columnVariants: Record<number | string, string> = {
   9: '9',
   10: '10',
   11: '11',
-  12: '12',
-};
+  12: '12'
+}

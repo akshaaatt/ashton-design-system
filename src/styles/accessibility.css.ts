@@ -1,4 +1,4 @@
-import { ComplexStyleRule, style } from '@vanilla-extract/css';
+import { ComplexStyleRule, style } from '@vanilla-extract/css'
 
 const hiddenStyles: ComplexStyleRule = {
   border: 0,
@@ -9,13 +9,13 @@ const hiddenStyles: ComplexStyleRule = {
   padding: 0,
   position: 'absolute',
   whiteSpace: 'nowrap',
-  width: '1px',
-};
+  width: '1px'
+}
 
-export const visuallyHidden = style(hiddenStyles);
+export const visuallyHidden = style(hiddenStyles)
 
 export const visuallyHiddenFocusable = style({
   selectors: {
-    '&:not(:focus):not(:focus-within)': hiddenStyles,
-  },
-});
+    '&:not(:focus):not(:focus-within)': hiddenStyles
+  }
+})

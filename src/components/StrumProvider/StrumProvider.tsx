@@ -1,37 +1,37 @@
-import React, { PropsWithChildren, useEffect } from 'react';
-import { timbre } from '../../themes';
+import React, { PropsWithChildren, useEffect } from 'react'
+import { timbre } from '../../themes'
 import {
   darkScheme,
   lightScheme,
-  systemScheme,
-} from '../../themes/colorScheme.css';
-import { StrumContext } from './StrumContext';
+  systemScheme
+} from '../../themes/colorScheme.css'
+import { StrumContext } from './StrumContext'
 
 export interface StrumProviderProps {
-  colorScheme?: 'dark' | 'light' | 'system';
-  theme?: string | null;
+  colorScheme?: 'dark' | 'light' | 'system'
+  theme?: string | null
 }
 
 const StrumProvider: React.FC<PropsWithChildren<StrumProviderProps>> = (
-  props,
+  props
 ) => {
-  const { children, colorScheme = 'system', theme = timbre } = props;
+  const { children, colorScheme = 'system', theme = timbre } = props
 
   useEffect(() => {
-    let colorSchemeStyle;
+    let colorSchemeStyle
     switch (colorScheme) {
       case 'dark':
-        colorSchemeStyle = darkScheme;
-        break;
+        colorSchemeStyle = darkScheme
+        break
       case 'light':
-        colorSchemeStyle = lightScheme;
-        break;
+        colorSchemeStyle = lightScheme
+        break
       default:
-        colorSchemeStyle = systemScheme;
-        break;
+        colorSchemeStyle = systemScheme
+        break
     }
-    document.documentElement.className = colorSchemeStyle;
-  }, [colorScheme, theme]);
+    document.documentElement.className = colorSchemeStyle
+  }, [colorScheme, theme])
 
   return (
     <>
@@ -39,7 +39,7 @@ const StrumProvider: React.FC<PropsWithChildren<StrumProviderProps>> = (
         <div className={theme}>{children}</div>
       </StrumContext.Provider>
     </>
-  );
-};
+  )
+}
 
-export default StrumProvider;
+export default StrumProvider

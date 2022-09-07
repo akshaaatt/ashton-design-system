@@ -1,12 +1,12 @@
-import React, { PropsWithChildren } from 'react';
-import { Atoms } from '../../sprinkles.css';
-import { composeWithAtoms } from '../../utils/compose';
-import { rowStyle, RowVariants } from './Row.css';
+import React, { PropsWithChildren } from 'react'
+import { Atoms } from '../../sprinkles.css'
+import { composeWithAtoms } from '../../utils/compose'
+import { rowStyle, RowVariants } from './Row.css'
 
 interface Row {
-  atoms?: Atoms;
-  horizontalAlign?: RowVariants['horizontalAlign'];
-  verticalAlign?: RowVariants['verticalAlign'];
+  atoms?: Atoms
+  horizontalAlign?: RowVariants['horizontalAlign']
+  verticalAlign?: RowVariants['verticalAlign']
 }
 
 const Row: React.FC<PropsWithChildren<Row>> = (props) => {
@@ -14,18 +14,18 @@ const Row: React.FC<PropsWithChildren<Row>> = (props) => {
     atoms: atomicProperties,
     children,
     horizontalAlign,
-    verticalAlign,
-  } = props;
+    verticalAlign
+  } = props
 
   const classes = composeWithAtoms(
     atomicProperties,
     rowStyle({
       horizontalAlign,
-      verticalAlign,
-    }),
-  );
+      verticalAlign
+    })
+  )
 
-  return <div className={classes}>{children}</div>;
-};
+  return <div className={classes}>{children}</div>
+}
 
-export default Row;
+export default Row

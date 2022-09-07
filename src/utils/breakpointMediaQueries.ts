@@ -4,5 +4,5 @@ export const breakpointMediaQueries: { [breakpoint in Breakpoints]: string } = {
   md: 'screen and (min-width: 768px)',
   lg: 'screen and (min-width: 992px)',
   xl: 'screen and (min-width: 1200px)',
-  xxl: 'screen and (min-width: 1400px)',
-};
+  xxl: 'screen and (min-width: 1400px)'
+}

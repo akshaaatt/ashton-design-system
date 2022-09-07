@@ -5,7 +5,9 @@
 ```bash
 npm install --save react-library-generator
 ```
+
 or
+
 ```bash
 yarn add react-library-generator
 ```

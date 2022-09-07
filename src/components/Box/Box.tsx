@@ -1,6 +1,6 @@
-import { createBox } from './index';
-import { atoms } from '../../sprinkles.css';
+import { createBox } from './index'
+import { atoms } from '../../sprinkles.css'
 
-const Box = createBox({ atoms });
+const Box = createBox({ atoms })
 
-export default Box;
+export default Box

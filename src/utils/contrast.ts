@@ -1,4 +1,4 @@
-import { readableColor } from 'polished';
+import { readableColor } from 'polished'
 
 export const getContrastingColor = (backgroundColor: string) =>
-  readableColor(backgroundColor, '#25252D', '#FFFFFF');
+  readableColor(backgroundColor, '#25252D', '#FFFFFF')

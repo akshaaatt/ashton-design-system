@@ -1,13 +1,13 @@
-import { createTheme } from '@vanilla-extract/css';
-import { vars } from '../contract.css';
+import { createTheme } from '@vanilla-extract/css'
+import { vars } from '../contract.css'
 import {
   generateContrastColors,
   generateDarkenedColors,
-  generateLightenedColors,
-} from '../themeUtils';
-import colors from './colors';
-import gutters from './gutters';
-import spacers from './spacers';
+  generateLightenedColors
+} from '../themeUtils'
+import colors from './colors'
+import gutters from './gutters'
+import spacers from './spacers'
 
 const timbre = createTheme(vars, {
   colors,
@@ -15,7 +15,7 @@ const timbre = createTheme(vars, {
   darkenedColors: generateDarkenedColors(colors),
   gutters,
   lightenedColors: generateLightenedColors(colors),
-  spacers,
-});
+  spacers
+})
 
-export default timbre;
+export default timbre

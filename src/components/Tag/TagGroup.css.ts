@@ -1,3 +1,3 @@
-import { style } from '@vanilla-extract/css';
+import { style } from '@vanilla-extract/css'
 
-export const tagGroupStyle = style({});
+export const tagGroupStyle = style({})

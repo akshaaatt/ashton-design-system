@@ -1,4 +1,4 @@
-import { createThemeContract } from '@vanilla-extract/css';
+import { createThemeContract } from '@vanilla-extract/css'
 
 export const vars = createThemeContract({
   colors: {
@@ -10,7 +10,7 @@ export const vars = createThemeContract({
     primary: '',
     red: '',
     white: '',
-    yellow: '',
+    yellow: ''
   },
   contrastColors: {
     black: '',
@@ -21,7 +21,7 @@ export const vars = createThemeContract({
     primary: '',
     red: '',
     white: '',
-    yellow: '',
+    yellow: ''
   },
   darkenedColors: {
     black: '',
@@ -32,11 +32,11 @@ export const vars = createThemeContract({
     primary: '',
     red: '',
     white: '',
-    yellow: '',
+    yellow: ''
   },
   gutters: {
     x: '',
-    y: '',
+    y: ''
   },
   lightenedColors: {
     black: '',
@@ -47,7 +47,7 @@ export const vars = createThemeContract({
     primary: '',
     red: '',
     white: '',
-    yellow: '',
+    yellow: ''
   },
   spacers: {
     0: '',
@@ -62,6 +62,6 @@ export const vars = createThemeContract({
     9: '',
     10: '',
     11: '',
-    12: '',
-  },
-});
+    12: ''
+  }
+})

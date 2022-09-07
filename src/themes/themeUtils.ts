@@ -1,6 +1,6 @@
-import { darken, lighten } from 'polished';
-import { getContrastingColor } from '../utils/contrast';
-import { vars } from './contract.css';
+import { darken, lighten } from 'polished'
+import { getContrastingColor } from '../utils/contrast'
+import { vars } from './contract.css'
 
 export const generateContrastColors = (colors) => ({
   black: getContrastingColor(colors.black),
@@ -11,8 +11,8 @@ export const generateContrastColors = (colors) => ({
   primary: getContrastingColor(colors.primary),
   red: getContrastingColor(colors.red),
   white: getContrastingColor(colors.white),
-  yellow: getContrastingColor(colors.yellow),
-});
+  yellow: getContrastingColor(colors.yellow)
+})
 
 export const generateDarkenedColors = (colors) => ({
   black: darken(0.1, colors.black),
@@ -23,8 +23,8 @@ export const generateDarkenedColors = (colors) => ({
   primary: darken(0.1, colors.primary),
   red: darken(0.1, colors.red),
   white: darken(0.1, colors.white),
-  yellow: darken(0.1, colors.yellow),
-});
+  yellow: darken(0.1, colors.yellow)
+})
 
 export const generateLightenedColors = (colors) => ({
   black: lighten(0.2, colors.black),
@@ -35,11 +35,11 @@ export const generateLightenedColors = (colors) => ({
   primary: lighten(0.2, colors.primary),
   red: lighten(0.2, colors.red),
   white: lighten(0.2, colors.white),
-  yellow: lighten(0.2, colors.yellow),
-});
+  yellow: lighten(0.2, colors.yellow)
+})
 
 export const mapContrastColors = (
-  contrastColors: typeof vars['contrastColors'],
+  contrastColors: typeof vars['contrastColors']
 ) => ({
   blackContrast: contrastColors.black,
   darkContrast: contrastColors.dark,
@@ -49,5 +49,5 @@ export const mapContrastColors = (
   primaryContrast: contrastColors.primary,
   redContrast: contrastColors.red,
   whiteContrast: contrastColors.white,
-  yellowContrast: contrastColors.yellow,
-});
+  yellowContrast: contrastColors.yellow
+})

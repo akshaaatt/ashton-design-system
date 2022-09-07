@@ -1,11 +1,11 @@
-import { style } from '@vanilla-extract/css';
+import { style } from '@vanilla-extract/css'
 
 export const displayNone = style({
-  display: 'none',
-});
+  display: 'none'
+})
 
 export const displayBlock = style({
-  display: 'block',
-});
+  display: 'block'
+})
 
-export const displayFlex = style({ display: 'flex' });
+export const displayFlex = style({ display: 'flex' })

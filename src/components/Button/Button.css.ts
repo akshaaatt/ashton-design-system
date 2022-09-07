@@ -1,14 +1,14 @@
-import { style } from '@vanilla-extract/css';
-import { recipe, RecipeVariants } from '@vanilla-extract/recipes';
-import { atoms } from '../../sprinkles.css';
-import { rounded } from '../../styles/borderRadius.css';
-import { vars } from '../../themes/contract.css';
+import { style } from '@vanilla-extract/css'
+import { recipe, RecipeVariants } from '@vanilla-extract/recipes'
+import { atoms } from '../../sprinkles.css'
+import { rounded } from '../../styles/borderRadius.css'
+import { vars } from '../../themes/contract.css'
 
 const buttonBaseStyle = style([
   rounded,
   atoms({
     paddingX: 4,
-    paddingY: 2,
+    paddingY: 2
   }),
   {
     border: '1px solid transparent',
@@ -20,17 +20,17 @@ const buttonBaseStyle = style([
     textAlign: 'center',
     textDecoration: 'none',
     userSelect: 'none',
-    verticalAlign: 'middle',
+    verticalAlign: 'middle'
   },
   {
     selectors: {
       '&:disabled': {
         cursor: 'default',
-        opacity: 0.7,
-      },
-    },
-  },
-]);
+        opacity: 0.7
+      }
+    }
+  }
+])
 
 export const buttonStyle = recipe({
   base: buttonBaseStyle,
@@ -44,9 +44,9 @@ export const buttonStyle = recipe({
         selectors: {
           '&:hover:not(:disabled), &:focus:not(:disabled)': {
             backgroundColor: vars.darkenedColors.black,
-            borderColor: vars.darkenedColors.black,
-          },
-        },
+            borderColor: vars.darkenedColors.black
+          }
+        }
       },
       dark: {
         backgroundColor: vars.colors.dark,
@@ -55,9 +55,9 @@ export const buttonStyle = recipe({
         selectors: {
           '&:hover:not(:disabled), &:focus:not(:disabled)': {
             backgroundColor: vars.darkenedColors.dark,
-            borderColor: vars.darkenedColors.dark,
-          },
-        },
+            borderColor: vars.darkenedColors.dark
+          }
+        }
       },
       light: {
         backgroundColor: vars.colors.light,
@@ -66,9 +66,9 @@ export const buttonStyle = recipe({
         selectors: {
           '&:hover:not(:disabled), &:focus:not(:disabled)': {
             backgroundColor: vars.darkenedColors.light,
-            borderColor: vars.darkenedColors.light,
-          },
-        },
+            borderColor: vars.darkenedColors.light
+          }
+        }
       },
       medium: {
         backgroundColor: vars.colors.medium,
@@ -77,9 +77,9 @@ export const buttonStyle = recipe({
         selectors: {
           '&:hover:not(:disabled), &:focus:not(:disabled)': {
             backgroundColor: vars.darkenedColors.medium,
-            borderColor: vars.darkenedColors.medium,
-          },
-        },
+            borderColor: vars.darkenedColors.medium
+          }
+        }
       },
       primary: {
         backgroundColor: vars.colors.primary,
@@ -88,9 +88,9 @@ export const buttonStyle = recipe({
         selectors: {
           '&:hover:not(:disabled), &:focus:not(:disabled)': {
             backgroundColor: vars.darkenedColors.primary,
-            borderColor: vars.darkenedColors.primary,
-          },
-        },
+            borderColor: vars.darkenedColors.primary
+          }
+        }
       },
       white: {
         backgroundColor: vars.colors.white,
@@ -99,27 +99,27 @@ export const buttonStyle = recipe({
         selectors: {
           '&:hover:not(:disabled), &:focus:not(:disabled)': {
             backgroundColor: vars.darkenedColors.white,
-            borderColor: vars.darkenedColors.white,
-          },
-        },
-      },
+            borderColor: vars.darkenedColors.white
+          }
+        }
+      }
     },
     size: {
       lg: { fontSize: '1.25rem' },
       md: {
-        fontSize: '1rem',
+        fontSize: '1rem'
       },
       sm: {
         fontSize: '0.875rem',
-        padding: `${vars.spacers[1]} ${vars.spacers[2]}`,
+        padding: `${vars.spacers[1]} ${vars.spacers[2]}`
       },
       xl: {
         fontSize: '1.5rem',
         fontWeight: 700,
-        padding: `${vars.spacers[3]} ${vars.spacers[5]}`,
-      },
-    },
-  },
-});
+        padding: `${vars.spacers[3]} ${vars.spacers[5]}`
+      }
+    }
+  }
+})
 
-export type ButtonVariants = RecipeVariants<typeof buttonStyle>;
+export type ButtonVariants = RecipeVariants<typeof buttonStyle>

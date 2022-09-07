@@ -1,1 +1,1 @@
-export { default as timbre } from './timbre/index.css';
+export { default as timbre } from './timbre/index.css'

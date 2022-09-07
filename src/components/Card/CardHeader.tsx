@@ -1,18 +1,18 @@
-import React, { PropsWithChildren } from 'react';
-import { Atoms } from '../../sprinkles.css';
-import { composeWithAtoms } from '../../utils/compose';
-import { cardHeaderStyle } from './CardHeader.css';
+import React, { PropsWithChildren } from 'react'
+import { Atoms } from '../../sprinkles.css'
+import { composeWithAtoms } from '../../utils/compose'
+import { cardHeaderStyle } from './CardHeader.css'
 
 interface CardHeader {
-  atoms?: Atoms;
+  atoms?: Atoms
 }
 
 export const CardHeader: React.FC<PropsWithChildren<CardHeader>> = (props) => {
-  const { atoms: atomicProperties, children } = props;
+  const { atoms: atomicProperties, children } = props
 
-  const classes = composeWithAtoms(atomicProperties, cardHeaderStyle);
+  const classes = composeWithAtoms(atomicProperties, cardHeaderStyle)
 
-  return <div className={classes}>{children}</div>;
-};
+  return <div className={classes}>{children}</div>
+}
 
-export default CardHeader;
+export default CardHeader

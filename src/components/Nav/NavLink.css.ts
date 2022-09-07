@@ -1,7 +1,7 @@
-import { style } from '@vanilla-extract/css';
-import { recipe } from '@vanilla-extract/recipes';
-import { atoms } from '../../sprinkles.css';
-import { navListItemStyle } from './NavListItem.css';
+import { style } from '@vanilla-extract/css'
+import { recipe } from '@vanilla-extract/recipes'
+import { atoms } from '../../sprinkles.css'
+import { navListItemStyle } from './NavListItem.css'
 
 const navLinkBaseStyle = style([
   atoms({ paddingX: 3, paddingY: 2 }),
@@ -11,20 +11,20 @@ const navLinkBaseStyle = style([
     selectors: {
       [`${navListItemStyle} &`]: {
         color: 'inherit',
-        textDecoration: 'none',
+        textDecoration: 'none'
       },
       [`${navListItemStyle} &:hover`]: {
-        textDecoration: 'underline',
-      },
-    },
-  },
-]);
+        textDecoration: 'underline'
+      }
+    }
+  }
+])
 
 export const navLinkStyle = recipe({
   base: navLinkBaseStyle,
   variants: {
     state: {
-      active: {},
-    },
-  },
-});
+      active: {}
+    }
+  }
+})

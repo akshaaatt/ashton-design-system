@@ -1,3 +1,3 @@
-import { style } from '@vanilla-extract/css';
+import { style } from '@vanilla-extract/css'
 
-export const mxAuto = style({ marginLeft: 'auto', marginRight: 'auto' });
+export const mxAuto = style({ marginLeft: 'auto', marginRight: 'auto' })

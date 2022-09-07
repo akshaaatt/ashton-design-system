@@ -1,3 +1,3 @@
-import { style } from '@vanilla-extract/css';
+import { style } from '@vanilla-extract/css'
 
-export const cursorPointer = style({ cursor: 'pointer' });
+export const cursorPointer = style({ cursor: 'pointer' })

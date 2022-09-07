@@ -1,4 +1,4 @@
-import { resumeConfig } from '../../../../../Downloads/Resume-Generator/edit-me/config/resumeConfig';
+import { resumeConfig } from '../../../../../Downloads/Resume-Generator/edit-me/config/resumeConfig'
 
 const colors = {
   black: '#0e0e10',
@@ -9,7 +9,7 @@ const colors = {
   primary: resumeConfig.primaryColor,
   red: '#e53e3e',
   white: '#ffffff',
-  yellow: '#ecc94b',
-};
+  yellow: '#ecc94b'
+}
 
-export default colors;
+export default colors

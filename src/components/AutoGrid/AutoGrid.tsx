@@ -1,7 +1,7 @@
-import React, { PropsWithChildren } from 'react';
-import { Atoms } from '../../sprinkles.css';
-import spacers from '../../themes/timbre/spacers';
-import { composeWithAtoms } from '../../utils/compose';
+import React, { PropsWithChildren } from 'react'
+import { Atoms } from '../../sprinkles.css'
+import spacers from '../../themes/timbre/spacers'
+import { composeWithAtoms } from '../../utils/compose'
 import {
   autoGridLGColumnsStyle,
   autoGridMDColumnsStyle,
@@ -12,17 +12,17 @@ import {
   autoGridXLColumnsStyle,
   autoGridXSColumnsStyle,
   autoGridXXLColumnsStyle,
-  autoGridYGuttersStyle,
-} from './AutoGrid.css';
+  autoGridYGuttersStyle
+} from './AutoGrid.css'
 
 interface AutoGrid {
-  atoms?: Atoms;
-  columns?: ColumnsBreakpoints;
-  equalHeight?: boolean;
-  guttersX?: keyof typeof spacers;
-  guttersY?: keyof typeof spacers;
-  horizontalAlign?: AutoGridVariants['horizontalAlign'];
-  verticalAlign?: AutoGridVariants['verticalAlign'];
+  atoms?: Atoms
+  columns?: ColumnsBreakpoints
+  equalHeight?: boolean
+  guttersX?: keyof typeof spacers
+  guttersY?: keyof typeof spacers
+  horizontalAlign?: AutoGridVariants['horizontalAlign']
+  verticalAlign?: AutoGridVariants['verticalAlign']
 }
 
 const AutoGrid: React.FC<PropsWithChildren<AutoGrid>> = (props) => {
@@ -34,15 +34,15 @@ const AutoGrid: React.FC<PropsWithChildren<AutoGrid>> = (props) => {
     guttersX = 4,
     guttersY = 4,
     horizontalAlign,
-    verticalAlign,
-  } = props;
+    verticalAlign
+  } = props
 
   const classes = composeWithAtoms(
     atomicProperties,
     autoGridStyle({
       height: equalHeight ? 'equal' : null,
       horizontalAlign,
-      verticalAlign,
+      verticalAlign
     }),
     autoGridXSColumnsStyle[columns?.xs],
     autoGridSMColumnsStyle[columns?.sm],
@@ -51,10 +51,10 @@ const AutoGrid: React.FC<PropsWithChildren<AutoGrid>> = (props) => {
     autoGridXLColumnsStyle[columns?.xl],
     autoGridXXLColumnsStyle[columns?.xxl],
     autoGridXGuttersStyle[guttersX],
-    autoGridYGuttersStyle[guttersY],
-  );
+    autoGridYGuttersStyle[guttersY]
+  )
 
-  return <div className={classes}>{children}</div>;
-};
+  return <div className={classes}>{children}</div>
+}
 
-export default AutoGrid;
+export default AutoGrid

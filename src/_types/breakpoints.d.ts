@@ -1,1 +1,1 @@
-type Breakpoints = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl';
+type Breakpoints = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl'

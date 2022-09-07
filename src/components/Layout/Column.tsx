@@ -1,6 +1,6 @@
-import React, { PropsWithChildren } from 'react';
-import { Atoms } from '../../sprinkles.css';
-import { composeWithAtoms } from '../../utils/compose';
+import React, { PropsWithChildren } from 'react'
+import { Atoms } from '../../sprinkles.css'
+import { composeWithAtoms } from '../../utils/compose'
 import {
   columnStyle,
   lgColumnsStyle,
@@ -8,16 +8,16 @@ import {
   smColumnsStyle,
   xlColumnsStyle,
   xsColumnsStyle,
-  xxlColumnsStyle,
-} from './Column.css';
+  xxlColumnsStyle
+} from './Column.css'
 
 interface Column {
-  atoms?: Atoms;
-  width?: ColumnsBreakpoints;
+  atoms?: Atoms
+  width?: ColumnsBreakpoints
 }
 
 const Column: React.FC<PropsWithChildren<Column>> = (props) => {
-  const { atoms: atomicProperties, children, width } = props;
+  const { atoms: atomicProperties, children, width } = props
 
   const classes = composeWithAtoms(
     atomicProperties,
@@ -27,10 +27,10 @@ const Column: React.FC<PropsWithChildren<Column>> = (props) => {
     mdColumnsStyle[width?.md],
     lgColumnsStyle[width?.lg],
     xlColumnsStyle[width?.xl],
-    xxlColumnsStyle[width?.xxl],
-  );
+    xxlColumnsStyle[width?.xxl]
+  )
 
-  return <div className={classes}>{children}</div>;
-};
+  return <div className={classes}>{children}</div>
+}
 
-export default Column;
+export default Column
