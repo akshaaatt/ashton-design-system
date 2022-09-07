@@ -7,6 +7,7 @@ interface StrumContext {
   theme: string | null
 }
 
+// @ts-ignore
 export const StrumContext = createContext<StrumContext>(null)
 
 export const useStrumTheme = () => {
