@@ -1,15 +1,15 @@
-# react-library-generator
+# Ashton Design System
 
 ## Install
 
 ```bash
-npm install --save react-library-generator
+npm install --save ashton-design-system
 ```
 
 or
 
 ```bash
-yarn add react-library-generator
+yarn add ashton-design-system
 ```
 
 ## Usage
@@ -17,8 +17,7 @@ yarn add react-library-generator
 ```tsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-library-generator'
-import 'react-library-generator/dist/index.css'
+import MyComponent from 'ashton-design-system'
 
 class Example extends Component {
   render() {
