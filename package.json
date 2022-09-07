@@ -1,11 +1,11 @@
 {
   "name": "ashton-design-system",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Ashton Design System",
   "author": "akshaaatt",
   "license": "GPL-3.0-or-later",
   "repository": "akshaaatt/ashton-design-system",
-  "main": "src/index.ts",
+  "main": "dist/index.ts",
   "engines": {
     "node": ">=10"
   },
@@ -37,7 +37,7 @@
     "test:watch": "react-scripts test --env=jsdom",
     "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build",
-    "buildpackage": "cd src && yarn pack",
+    "buildpackage": "cd dist && yarn pack",
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
