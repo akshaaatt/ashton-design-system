@@ -28,7 +28,7 @@
     "design"
   ],
   "scripts": {
-    "build": "microbundle-crl --no-compress --format modern,cjs",
+    "build": "rm -rf dist && NODE_ENV=production babel src --out-dir dist --copy-files",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
     "prepare": "run-s build",
     "test": "run-s test:unit test:lint test:build",
@@ -42,10 +42,8 @@
     "lint:fix": "eslint --fix",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
   },
-  "peerDependencies": {
-    "react": "^16.0.0"
-  },
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "@fortawesome/fontawesome-svg-core": "6.1.2",
     "@fortawesome/free-brands-svg-icons": "6.1.2",
     "@fortawesome/free-regular-svg-icons": "6.1.2",
@@ -56,11 +54,14 @@
     "@vanilla-extract/next-plugin": "2.0.2",
     "@vanilla-extract/recipes": "0.2.5",
     "@vanilla-extract/sprinkles": "1.4.1",
+    "normalize.css": "8.0.1",
     "polished": "4.2.2",
-    "react-transition-group": "4.4.5",
-    "normalize.css": "8.0.1"
+    "react-transition-group": "4.4.5"
   },
   "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.19.0",
+    "@babel/preset-env": "^7.19.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^14.4.3",
