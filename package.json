@@ -1,13 +1,11 @@
 {
-  "name": "@akshaaatt/react-library-generator",
+  "name": "ashton-design-system",
   "version": "1.0.0",
-  "description": "React library generator",
+  "description": "Ashton Design System",
   "author": "akshaaatt",
   "license": "GPL-3.0-or-later",
-  "repository": "akshaaatt/react-library-generator",
-  "main": "dist/index.js",
-  "module": "dist/index.modern.js",
-  "source": "src/index.tsx",
+  "repository": "akshaaatt/ashton-design-system",
+  "main": "src/index.ts",
   "engines": {
     "node": ">=10"
   },
@@ -31,7 +29,6 @@
     "prepare": "run-s build",
     "test": "run-s test:unit test:lint test:build",
     "test:build": "run-s build",
-    "test:lint": "eslint .",
     "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
     "predeploy": "cd example && yarn install && yarn run build",
