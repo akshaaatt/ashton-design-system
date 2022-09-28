@@ -1,0 +1,8 @@
+# Project exclude paths
+/node_modules/
+
+# extras
+.idea
+dist
+example
+.github
