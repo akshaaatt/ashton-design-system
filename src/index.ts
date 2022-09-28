@@ -34,9 +34,6 @@ export {
   Tag,
   TagGroup,
   Card,
-  CardBody,
-  CardHeader,
-  CardFooter,
   AutoGrid,
   AutoGridCell,
   Button,
@@ -51,3 +48,5 @@ export {
   Heading,
   Display
 }
+
+export type { CardBody, CardHeader, CardFooter }
