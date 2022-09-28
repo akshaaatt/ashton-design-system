@@ -7,12 +7,16 @@ type HTMLProperties = Omit<
   'as' | 'color' | 'height' | 'width'
 >
 
-export function createBox<AtomsFn extends AtomsFnBase>({atoms: atomsFn, defaultClassName}: CreateBoxParams<AtomsFn>) {
+export function createBox<AtomsFn extends AtomsFnBase>({
+  atoms: atomsFn,
+  defaultClassName
+}: CreateBoxParams<AtomsFn>) {
   type BoxProps = {
     as?: React.ElementType
     children?: React.ReactNode
     className?: string
-  } & Parameters<AtomsFn>[0] & HTMLProperties
+  } & Parameters<AtomsFn>[0] &
+    HTMLProperties
 
   const Box = forwardRef<HTMLElement, BoxProps>(
     ({ as: element = 'div', className, ...props }: BoxProps, ref) => {

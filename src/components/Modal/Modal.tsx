@@ -7,7 +7,6 @@ import React, {
   useEffect,
   useRef
 } from 'react'
-// @ts-ignore
 import { Transition } from 'react-transition-group'
 import Button from '../Button/Button'
 import ContainerFluid from '../Container/ContainerFluid'
@@ -25,18 +24,16 @@ export const ModalContext = createContext<{
   toggle: () => void
 }>({ isOpen: false, toggle: () => null })
 
-const Modal: React.FC<PropsWithChildren<{}>> = (props) => {
+const Modal: React.FC<PropsWithChildren<any>> = (props) => {
   const { children } = props
   const { isOpen, toggle } = useContext(ModalContext)
   const menuRef = useRef(null)
 
   useEffect(() => {
     if (isOpen) {
-      // @ts-ignore
-      menuRef.current!.focus({ preventScroll: true })
+      menuRef.current?.focus({ preventScroll: true })
       document.body.style.overflowY = 'hidden'
     } else {
-      // @ts-ignore
       document.body.style.overflowY = null
     }
   }, [isOpen])

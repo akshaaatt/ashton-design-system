@@ -5,9 +5,7 @@ import { rowStyle, RowVariants } from './Row.css'
 
 interface Row {
   atoms?: Atoms
-  // @ts-ignore
   horizontalAlign?: RowVariants['horizontalAlign']
-  // @ts-ignore
   verticalAlign?: RowVariants['verticalAlign']
 }
 

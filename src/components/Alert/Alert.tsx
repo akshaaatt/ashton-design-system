@@ -5,7 +5,6 @@ import { alertStyle, AlertVariants } from './Alert.css'
 
 interface Alert {
   atoms?: Atoms
-  // @ts-ignore
   color: AlertVariants['color']
 }
 

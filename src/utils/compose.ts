@@ -33,8 +33,8 @@ export function extractAtomsFromProps<AtomsFn extends AtomsFnBase>(
   atomsFn: AtomsFn
 ) {
   let hasAtomProps = false
-  let atomProps: Record<string, unknown> = {}
-  let otherProps: Record<string, unknown> = {}
+  const atomProps: Record<string, unknown> = {}
+  const otherProps: Record<string, unknown> = {}
 
   for (const key in props) {
     if (atomsFn.properties.has(key)) {

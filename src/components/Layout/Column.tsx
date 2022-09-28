@@ -22,17 +22,11 @@ const Column: React.FC<PropsWithChildren<Column>> = (props) => {
   const classes = composeWithAtoms(
     atomicProperties!,
     columnStyle,
-    // @ts-ignore
     xsColumnsStyle[width?.xs],
-    // @ts-ignore
     smColumnsStyle[width?.sm],
-    // @ts-ignore
     mdColumnsStyle[width?.md],
-    // @ts-ignore
     lgColumnsStyle[width?.lg],
-    // @ts-ignore
     xlColumnsStyle[width?.xl],
-    // @ts-ignore
     xxlColumnsStyle[width?.xxl]
   )
 

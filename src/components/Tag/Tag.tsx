@@ -6,9 +6,7 @@ import { tagStyle, TagVariants } from './Tag.css'
 
 interface Tag {
   atoms?: Atoms
-  // @ts-ignore
   color: TagVariants['color']
-  // @ts-ignore
   size?: TagVariants['size']
 }
 

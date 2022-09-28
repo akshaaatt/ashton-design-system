@@ -5,9 +5,7 @@ import { buttonStyle, ButtonVariants } from './Button.css'
 
 interface Button extends ButtonHTMLAttributes<HTMLButtonElement> {
   atoms?: Atoms
-  // @ts-ignore
   color?: ButtonVariants['color']
-  // @ts-ignore
   size?: ButtonVariants['size']
 }
 
