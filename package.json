@@ -1,11 +1,11 @@
 {
   "name": "ashton-design-system",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Ashton Design System",
   "author": "akshaaatt",
   "license": "MIT",
   "repository": "akshaaatt/ashton-design-system",
-  "main": "dist/index.ts",
+  "main": "src/index.ts",
   "engines": {
     "node": ">=10"
   },
@@ -76,6 +76,6 @@
     "typescript": "^4.8.2"
   },
   "files": [
-    "dist"
+    "src"
   ]
 }
