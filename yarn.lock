@@ -1349,12 +1349,17 @@
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-6.1.2.tgz#c1095b1bbabf19f37f9ff0719db38d92a410bcfe"
   integrity sha512-wBaAPGz1Awxg05e0PBRkDRuTsy4B3dpBm+zreTTyd9TH4uUM27cAL4xWyWR0rLJCrRwzVsQ4hF3FvM6rqydKPA==
 
-"@fortawesome/fontawesome-svg-core@6.1.2":
-  version "6.1.2"
-  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-6.1.2.tgz#11e2e8583a7dea75d734e4d0e53d91c63fae7511"
-  integrity sha512-853G/Htp0BOdXnPoeCPTjFrVwyrJHpe8MhjB/DYE9XjwhnNDfuBCd3aKc2YUYbEfHEcBws4UAA0kA9dymZKGjA==
+"@fortawesome/fontawesome-common-types@6.2.0":
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-6.2.0.tgz#76467a94aa888aeb22aafa43eb6ff889df3a5a7f"
+  integrity sha512-rBevIsj2nclStJ7AxTdfsa3ovHb1H+qApwrxcTVo+NNdeJiB9V75hsKfrkG5AwNcRUNxrPPiScGYCNmLMoh8pg==
+
+"@fortawesome/fontawesome-svg-core@6.2.0":
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-6.2.0.tgz#11856eaf4dd1d865c442ddea1eed8ee855186ba2"
+  integrity sha512-Cf2mAAeMWFMzpLC7Y9H1I4o3wEU+XovVJhTiNG8ZNgSQj53yl7OCJaS80K4YjrABWZzbAHVaoHE1dVJ27AAYXw==
   dependencies:
-    "@fortawesome/fontawesome-common-types" "6.1.2"
+    "@fortawesome/fontawesome-common-types" "6.2.0"
 
 "@fortawesome/free-brands-svg-icons@6.1.2":
   version "6.1.2"
@@ -1370,12 +1375,12 @@
   dependencies:
     "@fortawesome/fontawesome-common-types" "6.1.2"
 
-"@fortawesome/free-solid-svg-icons@6.1.2":
-  version "6.1.2"
-  resolved "https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-6.1.2.tgz#491d668b8a6603698d0ce1ac620f66fd22b74c84"
-  integrity sha512-lTgZz+cMpzjkHmCwOG3E1ilUZrnINYdqMmrkv30EC3XbRsGlbIOL8H9LaNp5SV4g0pNJDfQ4EdTWWaMvdwyLiQ==
+"@fortawesome/free-solid-svg-icons@6.2.0":
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-6.2.0.tgz#8dcde48109354fd7a5ece8ea48d678bb91d4b5f0"
+  integrity sha512-UjCILHIQ4I8cN46EiQn0CZL/h8AwCGgR//1c4R96Q5viSRwuKVo0NdQEc4bm+69ZwC0dUvjbDqAHF1RR5FA3XA==
   dependencies:
-    "@fortawesome/fontawesome-common-types" "6.1.2"
+    "@fortawesome/fontawesome-common-types" "6.2.0"
 
 "@fortawesome/react-fontawesome@0.2.0":
   version "0.2.0"
@@ -2512,24 +2517,7 @@
   resolved "https://registry.yarnpkg.com/@vanilla-extract/css-utils/-/css-utils-0.1.2.tgz#6bcd3e45f187d56c319ce9bc36ae1814b373c581"
   integrity sha512-qoxIu5E/UhJtoKsPL1JaU9nhTN0Xl5zYV0pScOgsvc3JN46TvTTt0L3GV8x3PQpZP7x3elw8BsC9czYbhJy9Gg==
 
-"@vanilla-extract/css@1.7.2":
-  version "1.7.2"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-1.7.2.tgz#2317f391a1d912372742386c8f44f2fbde3232c3"
-  integrity sha512-wRsV9sSD4qN6+dbS1ywExw5kEU4Fk/UipNKFsGwwUsHLyuPKK8BaZUmzfyAQex6POHYQboYv6Ajbqpvhx2KhfQ==
-  dependencies:
-    "@emotion/hash" "^0.8.0"
-    "@vanilla-extract/private" "^1.0.3"
-    chalk "^4.1.1"
-    css-what "^5.0.1"
-    cssesc "^3.0.0"
-    csstype "^3.0.7"
-    deep-object-diff "^1.1.0"
-    deepmerge "^4.2.2"
-    escape-string-regexp "^4.0.0"
-    media-query-parser "^2.0.2"
-    outdent "^0.8.0"
-
-"@vanilla-extract/css@^1.7.2":
+"@vanilla-extract/css@1.9.1", "@vanilla-extract/css@^1.7.2":
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-1.9.1.tgz#337b79faa5f8f98915a90c3fe3c30b54be746c09"
   integrity sha512-pu2SFiff5jRhPwvGoj8cM5l/qIyLvigOmy22ss5DGjwV5pJYezRjDLxWumi2luIwioMWvh9EozCjyfH8nq+7fQ==
@@ -2562,12 +2550,12 @@
     lodash "^4.17.21"
     outdent "^0.8.0"
 
-"@vanilla-extract/next-plugin@2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/next-plugin/-/next-plugin-2.0.2.tgz#f497158abb422c4681e173fc238161b33fd19e6b"
-  integrity sha512-91xtYoE/TVQcL9vkjN1sP8SDoDJVVuHOhwjeR3W1jgLFrKydrODRxmu9qzuRKcBVM2R7ayGdBQOKmm3HL2xpug==
+"@vanilla-extract/next-plugin@2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/next-plugin/-/next-plugin-2.1.1.tgz#c030bb930d7e64739158e36bf49bdd55c96102af"
+  integrity sha512-8+7WRL7JRv9w9MOwTpVi/ZDv3qXkxjkgJgxzS9wQJHjvdfcs0Xyq30ePeaJfBN4b6ClUeqOdj7UYa8fqKA8oOQ==
   dependencies:
-    "@vanilla-extract/webpack-plugin" "^2.1.7"
+    "@vanilla-extract/webpack-plugin" "^2.2.0"
     browserslist "^4.19.1"
 
 "@vanilla-extract/private@^1.0.3":
@@ -2585,7 +2573,7 @@
   resolved "https://registry.yarnpkg.com/@vanilla-extract/sprinkles/-/sprinkles-1.4.1.tgz#8c8703ddedaac355c1187db909119816c0fc771c"
   integrity sha512-aW6CfMMToX4a+baLuVxwcT0FSACjX3xrNt8wdi/3LLRlLAfhyue8OK7kJxhcYNZfydBeWTP59aRy8p5FUTIeew==
 
-"@vanilla-extract/webpack-plugin@^2.1.7":
+"@vanilla-extract/webpack-plugin@^2.2.0":
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@vanilla-extract/webpack-plugin/-/webpack-plugin-2.2.0.tgz#e7d07543d531a9fe283c37eebaabe746a44fbe30"
   integrity sha512-EQrnT7gIki+Wm57eIRZRw6pi4M4VVnwiSp5OOcQF81XdZvoYXo51Ern7+dHKS+Xxli151BWTUsg/UZSpaAz29Q==
@@ -4470,9 +4458,9 @@ eslint-plugin-jsx-a11y@^6.5.1:
     semver "^6.3.0"
 
 eslint-plugin-n@^15.0.0:
-  version "15.3.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-n/-/eslint-plugin-n-15.3.0.tgz#3e1ad236a17dce7ecc0760621c46cc251ef99560"
-  integrity sha512-IyzPnEWHypCWasDpxeJnim60jhlumbmq0pubL6IOcnk8u2y53s5QfT8JnXy7skjHJ44yWHRb11PLtDHuu1kg/Q==
+  version "15.5.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-n/-/eslint-plugin-n-15.5.0.tgz#8eb0773b019b88b145dd1eba687ccc9c50e71655"
+  integrity sha512-VCqQiZDpdm1Q9grnvy+XsENZoXDgTLqPHRQwgl9qFNNgTKR4YEnQOMN0pFB/9TbmrQ88jdeTnqTcNwRvjqMOtg==
   dependencies:
     builtins "^5.0.1"
     eslint-plugin-es "^4.1.0"
