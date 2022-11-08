@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/ashton-design-system/static/css/main.a032ef30.css",
+    "main.js": "/ashton-design-system/static/js/main.1c907680.js",
+    "static/media/homepage.jpg": "/ashton-design-system/static/media/homepage.a1cb618d594c36362d0f.jpg",
+    "index.html": "/ashton-design-system/index.html",
+    "main.a032ef30.css.map": "/ashton-design-system/static/css/main.a032ef30.css.map",
+    "main.1c907680.js.map": "/ashton-design-system/static/js/main.1c907680.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a032ef30.css",
+    "static/js/main.1c907680.js"
+  ]
+}
