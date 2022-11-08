@@ -57,16 +57,6 @@ const Home = () => {
             >
               Library
             </Button>
-            <Button
-              fullWidth
-              variant="contained"
-              sx={{ mt: 3, mb: 2 }}
-              onClick={() => {
-                navigate('/slider')
-              }}
-            >
-              Slider
-            </Button>
           </Box>
         </Grid>
       </Grid>

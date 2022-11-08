@@ -1,6 +1,6 @@
 {
   "name": "ashton-design-system",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "private": false,
   "description": "Ashton Design System",
   "publishConfig": {
@@ -26,11 +26,11 @@
   },
   "keywords": [
     "react",
-    "three.js",
-    "three",
-    "3D",
-    "component",
-    "cover"
+    "ashton",
+    "design-system",
+    "components",
+    "typescript",
+    "javascript"
   ],
   "author": "Akshat Tiwari",
   "license": "MIT",
